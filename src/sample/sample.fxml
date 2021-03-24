@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Add" />
+                  <Button mnemonicParsing="false" text="Remove">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" text="?">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <VBox layoutY="36.0" prefHeight="164.0" prefWidth="100.0">
+               <children>
+                  <Label text="Data" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Cost">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin></Label>
+                        <Label text="Goods">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin></Label>
+                        <Label text="Employees">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin></Label>
+                        <Label text="Departments">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Pane fx:id="pane" layoutX="71.0" layoutY="40.0" prefHeight="164.0" prefWidth="135.0">
+               <children>
+                  <Label layoutX="54.0" layoutY="6.0" text="Employees" />
+               </children>
+               <padding>
+                  <Insets left="-10.0" />
+               </padding></Pane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
